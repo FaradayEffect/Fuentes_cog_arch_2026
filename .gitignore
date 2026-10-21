@@ -1,0 +1,24 @@
+# my own notes, not part of the work
+GUIA_*.md
+DEMO_EN_VIVO*.txt
+PREGUNTAS_*.txt
+PASOS_*.txt
+GIT_PASOS.txt
+*.zip
+
+# python / jupyter / colcon
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+build/
+install/
+log/
+
+# logs of the robot runs
+actr_lab1_logs/
+actr_lab2_logs/
+
+# never commit keys
+.env
+*.key
+*.pem

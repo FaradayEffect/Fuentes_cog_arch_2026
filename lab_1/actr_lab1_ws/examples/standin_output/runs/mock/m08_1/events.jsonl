@@ -1,0 +1,34 @@
+{"t": 0.0, "kind": "mission", "msg": "\"Привези оба кубика в комнату Б.\"  expected: cube_0->room_b, cube_1->room_b  [full]", "expected": [["cube_0", "room_b"], ["cube_1", "room_b"]]}
+{"t": 0.1, "kind": "llm", "msg": "mock answered in 0.0 s", "attempt": 0, "feedback": [], "state": {"robot_place": "hall", "holding": null, "cube_places": {"cube_0": "hall", "cube_1": "room_b"}}, "text": "{\"steps\": [{\"action\": \"navigate\", \"target\": \"cube_0\"}, {\"action\": \"pick\", \"target\": \"cube_0\"}, {\"action\": \"navigate\", \"target\": \"room_b\"}, {\"action\": \"place\", \"target\": \"room_b\"}]}", "prompt": "", "tokens_in": null, "tokens_out": null}
+{"t": 0.1, "kind": "fire", "production": "ASK-LLM", "utility": 10}
+{"t": 0.2, "kind": "plan", "msg": "valid", "valid": true, "errors": [], "warnings": [], "steps": ["navigate(cube_0)", "pick(cube_0)", "navigate(room_b)", "place(room_b)"]}
+{"t": 0.2, "kind": "fire", "production": "VALIDATE-PROPOSAL", "utility": 10}
+{"t": 0.3, "kind": "plan", "msg": "accepted (4 steps): navigate(cube_0) pick(cube_0) navigate(room_b) place(room_b)"}
+{"t": 0.3, "kind": "fire", "production": "ACCEPT-PLAN", "utility": 10}
+{"t": 0.4, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 0.5, "kind": "action", "msg": "navigate(cube_0) -> (0.87, 1.44)  gate: ok", "approved": true, "rule": "ok", "cmd": "navigate", "target": "cube_0", "pose": [0.875, 1.4371, 1.0472], "step_index": 0, "state": {"x": 0.0, "y": 0.0, "room": "hall", "holding": null, "localized": true}}
+{"t": 0.5, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 0.6, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 7.2, "kind": "result", "msg": "navigate(cube_0): success"}
+{"t": 7.2, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 7.3, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 7.4, "kind": "action", "msg": "pick(cube_0)  gate: ok", "approved": true, "rule": "ok", "cmd": "pick", "target": "cube_0", "pose": null, "step_index": 1, "state": {"x": 0.87, "y": 1.44, "room": "hall", "holding": null, "localized": true}}
+{"t": 7.4, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 7.5, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 7.6, "kind": "result", "msg": "pick(cube_0): success"}
+{"t": 7.6, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 7.7, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 7.8, "kind": "action", "msg": "navigate(room_b) -> (4.40, -1.20)  gate: ok", "approved": true, "rule": "ok", "cmd": "navigate", "target": "room_b", "pose": [4.4, -1.2, 0.0], "step_index": 2, "state": {"x": 0.87, "y": 1.44, "room": "hall", "holding": "cube_0", "localized": true}}
+{"t": 7.8, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 7.9, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 26.7, "kind": "result", "msg": "navigate(room_b): success"}
+{"t": 26.7, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 26.8, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 26.9, "kind": "action", "msg": "place(room_b)  gate: ok", "approved": true, "rule": "ok", "cmd": "place", "target": "room_b", "pose": null, "step_index": 3, "state": {"x": 4.4, "y": -1.2, "room": "room_b", "holding": "cube_0", "localized": true}}
+{"t": 26.9, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 27.0, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 27.1, "kind": "result", "msg": "place(room_b): success"}
+{"t": 27.1, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 27.2, "kind": "verify", "msg": "the world matches the goal: mission done"}
+{"t": 27.2, "kind": "fire", "production": "VERIFY-GOAL", "utility": 10}
+{"t": 27.2, "kind": "done", "msg": "SUCCESS  status=done  time=27s steps=4 replans=0 repairs=0 denials=0 unsafe=False", "result": {"success": true, "status": "done", "reason": "", "duration": 27.2, "cycles": 272, "unsafe": false, "steps_done": 4, "replans": 0, "repairs": 0, "denials": 0, "retries": 0, "emergency_stops": 0, "llm_calls": 1, "invalid_plans": 0, "fallback_used": false, "score": 1.0, "unmet": [], "final_cubes": {"cube_0": "room_b", "cube_1": "room_b"}}}

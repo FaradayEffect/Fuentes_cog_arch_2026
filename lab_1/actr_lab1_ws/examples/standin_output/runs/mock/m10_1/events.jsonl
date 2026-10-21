@@ -1,0 +1,40 @@
+{"t": 0.0, "kind": "mission", "msg": "\"Съезди в комнату Б, потом отвези кубик 0 в комнату А.\"  expected: cube_0->room_a  [full]", "expected": [["cube_0", "room_a"]]}
+{"t": 0.1, "kind": "llm", "msg": "mock answered in 0.0 s", "attempt": 0, "feedback": [], "state": {"robot_place": "hall", "holding": null, "cube_places": {"cube_0": "hall", "cube_1": "room_b"}}, "text": "{\"steps\": [{\"action\": \"navigate\", \"target\": \"room_b\"}, {\"action\": \"navigate\", \"target\": \"cube_0\"}, {\"action\": \"pick\", \"target\": \"cube_0\"}, {\"action\": \"navigate\", \"target\": \"room_a\"}, {\"action\": \"place\", \"target\": \"room_a\"}]}", "prompt": "", "tokens_in": null, "tokens_out": null}
+{"t": 0.1, "kind": "fire", "production": "ASK-LLM", "utility": 10}
+{"t": 0.2, "kind": "plan", "msg": "valid", "valid": true, "errors": [], "warnings": [], "steps": ["navigate(room_b)", "navigate(cube_0)", "pick(cube_0)", "navigate(room_a)", "place(room_a)"]}
+{"t": 0.2, "kind": "fire", "production": "VALIDATE-PROPOSAL", "utility": 10}
+{"t": 0.3, "kind": "plan", "msg": "accepted (5 steps): navigate(room_b) navigate(cube_0) pick(cube_0) navigate(room_a) place(room_a)"}
+{"t": 0.3, "kind": "fire", "production": "ACCEPT-PLAN", "utility": 10}
+{"t": 0.4, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 0.5, "kind": "action", "msg": "navigate(room_b) -> (4.40, -1.20)  gate: ok", "approved": true, "rule": "ok", "cmd": "navigate", "target": "room_b", "pose": [4.4, -1.2, 0.0], "step_index": 0, "state": {"x": 0.0, "y": 0.0, "room": "hall", "holding": null, "localized": true}}
+{"t": 0.5, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 0.6, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 17.8, "kind": "result", "msg": "navigate(room_b): success"}
+{"t": 17.8, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 17.9, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 18.0, "kind": "action", "msg": "navigate(cube_0) -> (1.52, 1.44)  gate: ok", "approved": true, "rule": "ok", "cmd": "navigate", "target": "cube_0", "pose": [1.525, 1.4371, 2.0944], "step_index": 1, "state": {"x": 4.4, "y": -1.2, "room": "room_b", "holding": null, "localized": true}}
+{"t": 18.0, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 18.1, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 36.0, "kind": "result", "msg": "navigate(cube_0): success"}
+{"t": 36.0, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 36.1, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 36.2, "kind": "action", "msg": "pick(cube_0)  gate: ok", "approved": true, "rule": "ok", "cmd": "pick", "target": "cube_0", "pose": null, "step_index": 2, "state": {"x": 1.52, "y": 1.44, "room": "hall", "holding": null, "localized": true}}
+{"t": 36.2, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 36.3, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 36.4, "kind": "result", "msg": "pick(cube_0): success"}
+{"t": 36.4, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 36.5, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 36.6, "kind": "action", "msg": "navigate(room_a) -> (-4.50, 0.00)  gate: ok", "approved": true, "rule": "ok", "cmd": "navigate", "target": "room_a", "pose": [-4.5, 0.0, 3.1416], "step_index": 3, "state": {"x": 1.52, "y": 1.44, "room": "hall", "holding": "cube_0", "localized": true}}
+{"t": 36.6, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 36.7, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 59.6, "kind": "result", "msg": "navigate(room_a): success"}
+{"t": 59.6, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 59.7, "kind": "fire", "production": "NEXT-ACTION", "utility": 5}
+{"t": 59.8, "kind": "action", "msg": "place(room_a)  gate: ok", "approved": true, "rule": "ok", "cmd": "place", "target": "room_a", "pose": null, "step_index": 4, "state": {"x": -4.5, "y": 0.0, "room": "room_a", "holding": "cube_0", "localized": true}}
+{"t": 59.8, "kind": "fire", "production": "SAFETY-GATE", "utility": 50}
+{"t": 59.9, "kind": "fire", "production": "EXECUTE", "utility": 20}
+{"t": 60.0, "kind": "result", "msg": "place(room_a): success"}
+{"t": 60.0, "kind": "fire", "production": "STEP-SUCCESS", "utility": 12}
+{"t": 60.1, "kind": "verify", "msg": "the world matches the goal: mission done"}
+{"t": 60.1, "kind": "fire", "production": "VERIFY-GOAL", "utility": 10}
+{"t": 60.1, "kind": "done", "msg": "SUCCESS  status=done  time=60s steps=5 replans=0 repairs=0 denials=0 unsafe=False", "result": {"success": true, "status": "done", "reason": "", "duration": 60.1, "cycles": 601, "unsafe": false, "steps_done": 5, "replans": 0, "repairs": 0, "denials": 0, "retries": 0, "emergency_stops": 0, "llm_calls": 1, "invalid_plans": 0, "fallback_used": false, "score": 1.0, "unmet": [], "final_cubes": {"cube_0": "room_a", "cube_1": "room_b"}}}

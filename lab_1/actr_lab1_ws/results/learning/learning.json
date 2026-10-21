@@ -1,0 +1,516 @@
+{
+ "A": {
+  "learning on": [
+   {
+    "episode": 1,
+    "success": true,
+    "unsafe": false,
+    "retries": 1,
+    "denials": 0,
+    "sim_time": 67.80000000000042,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.6
+   },
+   {
+    "episode": 2,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.6799999999999999
+   },
+   {
+    "episode": 3,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.744
+   },
+   {
+    "episode": 4,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.7952
+   },
+   {
+    "episode": 5,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.83616
+   },
+   {
+    "episode": 6,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.868928
+   },
+   {
+    "episode": 7,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.8951424
+   },
+   {
+    "episode": 8,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.91611392
+   },
+   {
+    "episode": 9,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.9328911360000001
+   },
+   {
+    "episode": 10,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.9463129088000001
+   },
+   {
+    "episode": 11,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.95705032704
+   },
+   {
+    "episode": 12,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.965640261632
+   },
+   {
+    "episode": 13,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.9725122093056
+   },
+   {
+    "episode": 14,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.97800976744448
+   },
+   {
+    "episode": 15,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 65.90000000000053,
+    "u_retry": 0.2799999999999999,
+    "u_alt": 0.982407813955584
+   }
+  ],
+  "learning off": [
+   {
+    "episode": 1,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 2,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 3,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 4,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 5,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 6,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 7,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 8,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 9,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 10,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 11,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 12,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 13,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 14,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 15,
+    "success": true,
+    "unsafe": false,
+    "retries": 2,
+    "denials": 0,
+    "sim_time": 69.70000000000032,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   }
+  ]
+ },
+ "B": {
+  "gate OFF, learning on": [
+   {
+    "episode": 1,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 2,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 3,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 4,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 5,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 6,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 7,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 8,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 9,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 10,
+    "success": true,
+    "unsafe": true,
+    "retries": 0,
+    "denials": 0,
+    "sim_time": 90.29999999999914,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   }
+  ],
+  "gate ON, learning on": [
+   {
+    "episode": 1,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 2,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 3,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 4,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 5,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 6,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 7,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 8,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 9,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   },
+   {
+    "episode": 10,
+    "success": true,
+    "unsafe": false,
+    "retries": 0,
+    "denials": 1,
+    "sim_time": 29.300000000000146,
+    "u_retry": 0.6,
+    "u_alt": 0.5
+   }
+  ]
+ },
+ "noise": 0.0,
+ "seed": 0
+}

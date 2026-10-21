@@ -1,0 +1,26 @@
+# Parameters of the LQG controller (node lqg_navigator). A number may be written 100.0 or 100.
+# The steering law, the noise of the experiment and the forklift are launch arguments of lqg_nav sim.launch.py.
+lqg_navigator:
+  ros__parameters:
+    rate: 10.0               # Hz: one step every 0.1 s (as the Nav2 controller of TurtleBot3). Keep 10: the
+                             # clock of Gazebo (/clock) also comes 10 times per second
+    replan_period: 1.0       # s: a fresh path from the Nav2 planner (as the default behaviour tree of Nav2)
+    # limits
+    v_max: 0.20              # m/s (TurtleBot3 Burger can do 0.22)
+    w_max: 1.0               # rad/s
+    acc_max: 0.5             # m/s^2
+    alpha_max: 3.0           # rad/s^2
+    lat_acc_max: 0.3         # m/s^2: slower in curves
+    # LQR: cost = x'Qx + u'Ru, x = (lateral error, heading error), u = extra turn rate
+    q_y: 100.0
+    q_theta: 6.0
+    r: 1.0
+    # Kalman filter: standard deviations of the model noise (one step) and of the measured pose
+    w_y: 0.003
+    w_theta: 0.01
+    v_y: 0.02
+    v_theta: 0.03
+    # goal
+    goal_precision: 0.03     # m
+    xy_tolerance: 0.25       # m, at the end of the path (as Nav2 of TurtleBot3)
+    yaw_tolerance: 0.10      # rad

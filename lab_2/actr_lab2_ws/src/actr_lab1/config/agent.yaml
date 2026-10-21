@@ -1,0 +1,12 @@
+# Settings of the agent node that rarely change.
+# The settings that you change often (planner, mission, ablate ...) are launch arguments:
+#   ros2 launch actr_lab1 agent.launch.py --show-args
+actr_agent:
+  ros__parameters:
+    pick_radius: 1.0          # reach of the virtual gripper in metres
+    nav_timeout: 150.0        # cancel a Nav2 goal after this many simulation seconds
+    startup_timeout: 240.0    # how long to wait for Gazebo, localization and Nav2 (seconds)
+    wait_for_ready: true
+    llm_temperature: 0.0
+    seed: 0
+    places_dir: ""            # empty = use the installed package data
