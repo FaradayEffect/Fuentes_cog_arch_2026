@@ -1,7 +1,6 @@
 # Lab 1: ACT-R agent + local LLM + ROS 2 / Gazebo
 
 Pedro Fuentes, course "Cognitive Architectures and Their Applications".
-(Русская версия: [README_ru.md](README_ru.md))
 
 ## What I built
 
@@ -217,39 +216,6 @@ Tokens and chunks are not the same thing. A token is a piece of text for the LLM
 a word). A chunk is a fact in ACT-R memory with a type and named slots, like `action(cmd=pick,
 target=cube_0)`. The LLM works with tokens; ACT-R works with chunks.
 
-## How to run it
-
-### Docker (ROS 2 Humble + Gazebo + Nav2 + Ollama), Windows 11 with WSL2 or Linux
-
-Run these in a WSL terminal (not PowerShell), in the project folder:
-
-```bash
-docker/run.sh build                 # once (10-30 min the first time; later only the code is rebuilt)
-docker/run.sh check --no-llm        # is everything installed?
-GPU=1 docker/run.sh llm-start       # Ollama in its own container, on the NVIDIA GPU (without GPU=1: CPU only)
-docker/run.sh llm-pull              # the model qwen2.5:3b-instruct (about 2 GB, once)
-
-# terminal 1: Gazebo + Nav2 + the robot with the forklift
-docker/run.sh run ros2 launch actr_lab1 sim.launch.py
-
-# terminal 2: check that everything runs, then the agent with the real LLM ...
-docker/run.sh check --runtime
-docker/run.sh exec ros2 launch actr_lab1 agent.launch.py planner:=ollama shutdown_when_done:=true
-# ... or with the Mock planner (a new simulation first: after one mission the cubes are already in room A)
-docker/run.sh exec ros2 launch actr_lab1 agent.launch.py planner:=mock shutdown_when_done:=true
-
-# terminal 3 (optional): the production rules of ACT-R live, while the agent runs
-tools/actr_live.sh
-```
-
-Useful arguments: `mission:="..."` (no spaces around `:=`), `fallback:=false`, `ablate:=gate`,
-`gui:=false`, `arm:=false`, `gripper:=virtual`, `show_tokens:=true`, `llm_model:=...`. All of them:
-`docker/run.sh exec ros2 launch actr_lab1 agent.launch.py --show-args` (and `sim.launch.py --show-args`
-for the simulation ones like `gui` and `arm`).
-Every run writes its logs to `~/actr_lab1_logs/<time>/` (`events.jsonl` and `results.jsonl`).
-I used ROS 2 Humble (Ubuntu 22.04 in the container, Gazebo Classic 11). The code also has a path for
-Foxy (`LAB_ROS_DISTRO=foxy`), but I did not test it.
-
 ### Only Python (no ROS, Python 3.8 or newer, no extra packages)
 
 ```bash
@@ -380,10 +346,3 @@ how far from a cube to stop (`approach_radii`, `approach_margin`) and how far in
 cube down (`drop_reach`); `SimRobot` does not have these, so the simulation results stayed exactly the
 same. The agent node also makes "next to the cube" bigger when the robot has the forklift (1.3 m, and
 1.5 m for the gate).
-
-## Next: Lab 2
-
-Lab 2 asks to replace the standard Nav2 controller with an LQG or PMP controller. The plan is a new
-robot class with the same `RobotAPI` (for example a subclass of `RosRobot`) that takes the path from
-Nav2 (`ComputePathToPose`) and follows it with my own controller through `/cmd_vel`. ACT-R, the LLM,
-the validator and the gate stay as they are.
